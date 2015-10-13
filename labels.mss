@@ -21,7 +21,7 @@
 // Water labels
 #marine_label { 
   text-name: @name;
-  text-face-name: @sans_bold;
+  text-face-name: @sans;
   text-fill: @text;
   text-size: 12;
   text-halo-fill: @water;
@@ -39,7 +39,7 @@
   [zoom>=16][area>10000],
   [zoom>=17] {
     text-name: @name;
-    text-face-name: @sans_bold;
+    text-face-name: @sans;
     text-fill: @text;
     text-size: 12;
     text-halo-fill: @water;
@@ -54,7 +54,7 @@
 #waterway_label[type='canal'][zoom>=14],
 #waterway_label[type='stream'][zoom>=15] { 
   text-name: @name;
-  text-face-name: @sans_bold;
+  text-face-name: @sans;
   text-fill: @text;
   text-min-distance: 60;
   text-size: 10;
