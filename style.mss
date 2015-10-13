@@ -3,7 +3,6 @@
 
 // Fonts //
 @sans: 'National Regular';
-@sans_bold: 'National Bold';
 
 /*
 This style is designed to be easily recolored by adjusting the color
@@ -13,15 +12,12 @@ maintain or invert existing value (light to dark) scale.
 
 // Color palette //
 @road:  #ffffff;
-@land:  #f5fff5;
-@park:  #cbffc5;
-
-// Water color is calculated by sampling the resulting color from
-// the soft-light comp-op in the #water layer style above. 
-@water: #fcffff;
+@land:  rgb(235, 253, 231);
+@park:  darken(@land, 8%);
+@water: rgb(245, 253, 255);
 
 @fill1: #fff;
-@fill2: #dafad2;
+@fill2: darken(@land, 2%);
 @fill3: #fff;
 @fill4: #FFF;
 
@@ -60,18 +56,18 @@ Map { font-directory: url("fonts/"); background-color: @land; }
 
 #landuse[class='pitch'],
 #landuse[class='sand'] { 
-  polygon-fill: darken(@land,3);
+  polygon-fill: darken(@land,2%);
 }
 
 #landuse[class='hospital'],
 #landuse[class='industrial'],
 #landuse[class='school'] { 
-  polygon-fill: darken(@land,3);
+  polygon-fill: darken(@land,2%);
 }
 
 #building { 
-  polygon-fill: darken(@land,3);
-  [zoom>=17]{ polygon-fill: darken(@land,5);}
+  polygon-fill: darken(@land,2%);
+  [zoom>=17]{ polygon-fill: darken(@land,4%);}
 }
 
 #aeroway {

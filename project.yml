@@ -11,9 +11,9 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - -73.9553
-  - 40.7321
-  - 17
+  - -73.9509
+  - 40.7286
+  - 16
 description: A simple basemap that matches the identity of Curb Your Litter.
 format: "png8:m=h"
 interactivity_layer: ''

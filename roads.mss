@@ -25,9 +25,9 @@
     line-color: @road;
     line-width: 0.5;
     [zoom>=15] { line-width: 1; } 
-    [class='path'] { line-dasharray: 2,2;}
+   // [class='path'] { line-dasharray: 2,2;}
     [class='major_rail'],
-    [class='minor_rail'] { line-dasharray: 3,3; }
+    [class='minor_rail'] { line-width: 2; }
     [class='motorway'] { 
       [zoom>=11] { line-width: 2; }
       [zoom>=12] { line-width: 3; }
@@ -49,7 +49,7 @@
       [zoom>=16] { line-width: 2; }
       [zoom>=18] { line-width: 4; }
     }
-    [class='street_limited'] { line-dasharray: 4,2; }
+    //[class='street_limited'] { line-dasharray: 4,2; }
   }
 }
 
@@ -81,6 +81,6 @@
       [zoom>=16] { line-width: 2 + @case; }
       [zoom>=18] { line-width: 4 + @case; }
     }
-    [class='street_limited'] { line-dasharray: 4,2; }
+    //[class='street_limited'] { line-dasharray: 4,2; }
   }
 }
